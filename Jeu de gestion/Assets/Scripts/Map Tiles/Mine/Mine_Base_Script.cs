@@ -71,7 +71,6 @@ public class Mine_Base_Script : MonoBehaviour {
         gameObject.GetComponent<SpriteRenderer>().sprite = BaseMineSprite;
         PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = CopperPrimaryMineSprite;
         SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronSecondaryMineSprite;
-        StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronPrimaryMineSprite;
 	}
 	
 	// Update is called once per frame
@@ -79,3 +78,6 @@ public class Mine_Base_Script : MonoBehaviour {
 		
 	}
 }
+
+//À noter:
+//- L'ordre d'affichage des sprites dépend de l'ordre dans lequel je les ai appelés
