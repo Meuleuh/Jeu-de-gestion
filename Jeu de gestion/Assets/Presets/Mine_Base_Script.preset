@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mine_Base_Script
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: a5410453144e1634b947f3afb4b78564,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PrimaryOreSpriteHandler
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BaseMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
+  - target: {fileID: 0}
+    propertyPath: IronPrimaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47, type: 3}
+  - target: {fileID: 0}
+    propertyPath: IronSecondaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a, type: 3}
+  - target: {fileID: 0}
+    propertyPath: IronOreSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 04c7b00d1b69a1c4083ffcd4f042444b, type: 3}
+  - target: {fileID: 0}
+    propertyPath: CopperPrimaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 40fcae6411ce9e24590b121c6aabfbfc, type: 3}
+  - target: {fileID: 0}
+    propertyPath: CopperSecondaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: d1a249c646f04424b8c7939323f0386d, type: 3}
+  - target: {fileID: 0}
+    propertyPath: CopperOreSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: bbb82b3e8760e5540b91fa36ecf677d7, type: 3}
+  - target: {fileID: 0}
+    propertyPath: TinPrimaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 27492d5b90e3dcd4781f0810115b8f1f, type: 3}
+  - target: {fileID: 0}
+    propertyPath: TinSecondaryMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 9b883b40e4bafc34890e5e117e386ae8, type: 3}
+  - target: {fileID: 0}
+    propertyPath: TinOreSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: e170f474963df674ea7413a20d60c7d1, type: 3}
+  - target: {fileID: 0}
+    propertyPath: UnknownMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 611e90444bf42bf45b964d3e6cdad2f8, type: 3}
+  - target: {fileID: 0}
+    propertyPath: PausedMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 35170a6de4ce07f4d95e4fb5645c4fc0, type: 3}
+  - target: {fileID: 0}
+    propertyPath: InProgressMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 6e5a9e17344488e4d93ea71f0e924136, type: 3}
+  - target: {fileID: 0}
+    propertyPath: EmptyMineSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 83fba2bed718324428f05f235ad0517e, type: 3}
+  - target: {fileID: 0}
+    propertyPath: BuildingFirstPartSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: faeac5e8419357649b281af23c2518c1, type: 3}
+  - target: {fileID: 0}
+    propertyPath: BuildingSecondPartSprite
+    value: 
+    objectReference: {fileID: 21300000, guid: d584c57976a99a641a2ece6988e81ec4, type: 3}
