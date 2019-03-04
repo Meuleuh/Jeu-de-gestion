@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1151933664}
   - component: {fileID: 1151933663}
   m_Layer: 0
-  m_Name: Secondary Ressource
+  m_Name: Secondary Ore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,11 +257,12 @@ MonoBehaviour:
   SecondaryOreSpriteHandler: {fileID: 1151933662}
   StatusSpriteHandler: {fileID: 62151873}
   BaseMineSprite: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
-  IronPrimaryMineSprite: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47,
+  IronPrimaryOreSprite: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47,
     type: 3}
-  IronSecondaryMineSprite: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a,
+  IronSecondaryOreSprite: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a,
     type: 3}
-  IronOreSprite: {fileID: 21300000, guid: 04c7b00d1b69a1c4083ffcd4f042444b, type: 3}
+  IronRessourceSprite: {fileID: 21300000, guid: 04c7b00d1b69a1c4083ffcd4f042444b,
+    type: 3}
   CopperPrimaryMineSprite: {fileID: 21300000, guid: 40fcae6411ce9e24590b121c6aabfbfc,
     type: 3}
   CopperSecondaryMineSprite: {fileID: 21300000, guid: d1a249c646f04424b8c7939323f0386d,
@@ -296,7 +297,7 @@ GameObject:
   - component: {fileID: 4346133875421174656}
   - component: {fileID: 6677248305804931065}
   m_Layer: 0
-  m_Name: Primary Ressource
+  m_Name: Primary Ore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

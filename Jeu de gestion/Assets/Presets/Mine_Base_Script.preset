@@ -42,15 +42,15 @@ Preset:
     value: 
     objectReference: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
   - target: {fileID: 0}
-    propertyPath: IronPrimaryMineSprite
+    propertyPath: IronPrimaryOreSprite
     value: 
     objectReference: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47, type: 3}
   - target: {fileID: 0}
-    propertyPath: IronSecondaryMineSprite
+    propertyPath: IronSecondaryOreSprite
     value: 
     objectReference: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a, type: 3}
   - target: {fileID: 0}
-    propertyPath: IronOreSprite
+    propertyPath: IronRessourceSprite
     value: 
     objectReference: {fileID: 21300000, guid: 04c7b00d1b69a1c4083ffcd4f042444b, type: 3}
   - target: {fileID: 0}
