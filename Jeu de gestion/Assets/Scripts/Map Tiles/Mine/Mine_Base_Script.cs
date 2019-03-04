@@ -6,6 +6,10 @@ public class Mine_Base_Script : MonoBehaviour {
 
     [SerializeField]
     GameObject PrimaryOreSpriteHandler;
+    [SerializeField]
+    GameObject SecondaryOreSpriteHandler;
+    [SerializeField]
+    GameObject StatusSpriteHandler;
 
     //Liste de tous les sprites nécessaires pour le bon fonctionnement de la mine toute entière
 
@@ -52,10 +56,22 @@ public class Mine_Base_Script : MonoBehaviour {
     [SerializeField]
     Sprite BuildingSecondPartSprite;
 
+    // Pour le contrôle manuel lors des test
+    [SerializeField]
+    bool ManuallyHandled;
+    [SerializeField]
+    string ManuallyImposedPrimaryOre;
+    [SerializeField]
+    string ManuallyImposedSecondaryOre;
+    [SerializeField]
+    string ManuallyImposedState;
+
     // Use this for initialization
     void Start () {
         gameObject.GetComponent<SpriteRenderer>().sprite = BaseMineSprite;
         PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = CopperPrimaryMineSprite;
+        SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronSecondaryMineSprite;
+        StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronPrimaryMineSprite;
 	}
 	
 	// Update is called once per frame

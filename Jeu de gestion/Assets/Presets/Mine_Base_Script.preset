@@ -30,6 +30,14 @@ Preset:
     value: 
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: SecondaryOreSpriteHandler
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: StatusSpriteHandler
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: BaseMineSprite
     value: 
     objectReference: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
@@ -93,3 +101,19 @@ Preset:
     propertyPath: BuildingSecondPartSprite
     value: 
     objectReference: {fileID: 21300000, guid: d584c57976a99a641a2ece6988e81ec4, type: 3}
+  - target: {fileID: 0}
+    propertyPath: ManuallyHandled
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ManuallyImposedPrimaryOre
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ManuallyImposedSecondaryOre
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ManuallyImposedState
+    value: 
+    objectReference: {fileID: 0}
