@@ -4,85 +4,147 @@ using UnityEngine;
 
 public class Mine_Base_Script : MonoBehaviour {
 
-    //Déclaration des variables statiques
+//Déclaration des variables statiques
 
-        //Variables statiques...
+    //Variables statiques...
 
-    //Fin de la déclaration des variables statiques
-
-
-
-    //Déclaration des variables non-statiques
-
-        //Variables non-statiques...
-
-    //Fin de la déclaration des variables non-statiques
+//Fin de la déclaration des variables statiques
 
 
 
-    //Déclaration des variables en Serialize Field
+//Déclaration des variables non-statiques
+
+    //Variables non-statiques...
+
+//Fin de la déclaration des variables non-statiques
+
+
+
+//Déclaration des variables en Serialize Field
     
-        //Liste des gameObjects nécessaire au bon foncitonnement de la mine
+    //Liste des gameObjects nécessaire au bon foncitonnement de la mine
 
-        [SerializeField]
-        GameObject PrimaryOreSpriteHandler, SecondaryOreSpriteHandler, StatusSpriteHandler;
+    [SerializeField]
+    GameObject PrimaryOreSpriteHandler, SecondaryOreSpriteHandler, StatusSpriteHandler;
 
-        //Liste de tous les sprites nécessaires pour le bon fonctionnement de la mine toute entière
+    //Liste de tous les sprites nécessaires pour le bon fonctionnement de la mine toute entière
 
-        [SerializeField]
-        Sprite BaseMineSprite;
+    [SerializeField]
+    Sprite BaseMineSprite;
 
-        //Liste des sprites pour le fer
+    //Liste des sprites pour le fer
 
-        [SerializeField]
-        Sprite IronPrimaryOreSprite, IronSecondaryOreSprite, IronRessourceSprite;
+    [SerializeField]
+    Sprite IronPrimaryMineSprite, IronSecondaryMineSprite, IronRessourceSprite;
 
-        //Liste des sprites pour le cuivre
+    //Liste des sprites pour le cuivre
 
-        [SerializeField]
-        Sprite CopperPrimaryMineSprite, CopperSecondaryMineSprite, CopperOreSprite;
+    [SerializeField]
+    Sprite CopperPrimaryMineSprite, CopperSecondaryMineSprite, CopperOreSprite;
 
-        //Liste des sprites pour l'étain
+    //Liste des sprites pour l'étain
 
-        [SerializeField]
-        Sprite TinPrimaryMineSprite, TinSecondaryMineSprite, TinOreSprite;
+    [SerializeField]
+    Sprite TinPrimaryMineSprite, TinSecondaryMineSprite, TinOreSprite;
 
-        //Liste des états de la mine
+    //Liste des états de la mine
 
-        [SerializeField]
-        Sprite UnknownMineSprite, PausedMineSprite, InProgressMineSprite, EmptyMineSprite;
+    [SerializeField]
+    Sprite UnknownMineSprite, PausedMineSprite, InProgressMineSprite, EmptyMineSprite;
 
-        //Liste des sprites de progression pour la construction de la mine
+    //Liste des sprites de progression pour la construction de la mine
 
-        [SerializeField]
-        Sprite BuildingFirstPartSprite, BuildingSecondPartSprite;
+    [SerializeField]
+    Sprite BuildingFirstPartSprite, BuildingSecondPartSprite;
 
-        //Pour le contrôle manuel lors des test
+    //Pour le contrôle automatique lors de l'exécution. On mets ça en Serialize Field car les autres composantes pouront intéragir avec et l'on pourra voir l'intéraction se faire. De plus, le contrôle manuel sera possible
 
-        [SerializeField]
-        bool ManuallyHandled;
+    [SerializeField]
+    string Statut, PrimaryOre, SecondaryOre;
 
-        [SerializeField]
-        string ManuallyImposedPrimaryOre, ManuallyImposedSecondaryOre, ManuallyImposedState;
+    //Pour ce qui est de la quantité de minerai présent dans la mine, on mets ça en Serialize Field pour pouvoir être vu durant les test
 
-    //Fin de la déclaration des Serialize Field
+    [SerializeField]
+    double PrimaryOreAmount, SecondaryOreAmount;
+
+//Fin de la déclaration des Serialize Field
 
 
 
-    //Début des fonctions complémentaires
+//Début des fonctions complémentaires
 
-        //Fonctions complémentaires
+    void DisplayMine()
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = BaseMineSprite;
+        PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = null;
+        SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = null;
+        StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = null;
+        if (Statut == "Unknown")
+        {
+            StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = UnknownMineSprite;
+        }
+        else if (Statut == "Empty")
+        {
+            StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = EmptyMineSprite;
+        }
+        else
+        {
+            if (PrimaryOre == "Iron")
+            {
+                PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronPrimaryMineSprite;
+            }
+            else if (PrimaryOre == "Copper")
+            {
+                PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = CopperPrimaryMineSprite;
+            }
+            else if (PrimaryOre == "Tin")
+            {
+                PrimaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = TinPrimaryMineSprite;
+            }
 
-    //Fin des fonctions complémentaires
+            if (SecondaryOre == "Iron")
+            {
+                SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = IronSecondaryMineSprite;
+            }
+            else if (SecondaryOre == "Copper")
+            {
+                SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = CopperSecondaryMineSprite;
+            }
+            else if (SecondaryOre == "Tin")
+            {
+                SecondaryOreSpriteHandler.GetComponent<SpriteRenderer>().sprite = TinSecondaryMineSprite;
+            }
+
+            if (Statut == "Building Part 1")
+            {
+                StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = BuildingFirstPartSprite;
+            }
+            else if (Statut == "Building Part 2")
+            {
+                StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = BuildingSecondPartSprite;
+            }
+            else if (Statut == "In Progress")
+            {
+                StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = InProgressMineSprite;
+            }
+            else if (Statut == "Paused")
+            {
+                StatusSpriteHandler.GetComponent<SpriteRenderer>().sprite = PausedMineSprite;
+            }
+        }
+    }
+
+//Fin des fonctions complémentaires
     
     // Use this for initialization
     void Start () {
-        //gameObject.GetComponent<SpriteRenderer>().sprite = BaseMineSprite;
+        gameObject.name = ("Mine (" + gameObject.GetComponent<Transform>().position.x + "," + gameObject.GetComponent<Transform>().position.y + ")");
+        Statut = "Unknown";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        DisplayMine();
 	}
 }
 

@@ -42,11 +42,11 @@ Preset:
     value: 
     objectReference: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
   - target: {fileID: 0}
-    propertyPath: IronPrimaryOreSprite
+    propertyPath: IronPrimaryMineSprite
     value: 
     objectReference: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47, type: 3}
   - target: {fileID: 0}
-    propertyPath: IronSecondaryOreSprite
+    propertyPath: IronSecondaryMineSprite
     value: 
     objectReference: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a, type: 3}
   - target: {fileID: 0}
@@ -116,4 +116,48 @@ Preset:
   - target: {fileID: 0}
     propertyPath: ManuallyImposedState
     value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_Unknown
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_Discovered
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_BuildingPart1
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_BuildingPart2
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_InProgress
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_Paused
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Statut_Empty
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PrimaryOre
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SecondaryOre
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PrimaryOreAmount
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SecondaryOreAmount
+    value: 0
     objectReference: {fileID: 0}

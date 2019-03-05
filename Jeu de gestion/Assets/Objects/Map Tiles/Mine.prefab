@@ -67,7 +67,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,7 +146,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -257,9 +257,9 @@ MonoBehaviour:
   SecondaryOreSpriteHandler: {fileID: 1151933662}
   StatusSpriteHandler: {fileID: 62151873}
   BaseMineSprite: {fileID: 21300000, guid: ef29a16e777c43141a73ee199fa4e0ed, type: 3}
-  IronPrimaryOreSprite: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47,
+  IronPrimaryMineSprite: {fileID: 21300000, guid: b385ea8688b3db149934764cd406bc47,
     type: 3}
-  IronSecondaryOreSprite: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a,
+  IronSecondaryMineSprite: {fileID: 21300000, guid: cf3355d6ffbf74c4c8d29e07c094205a,
     type: 3}
   IronRessourceSprite: {fileID: 21300000, guid: 04c7b00d1b69a1c4083ffcd4f042444b,
     type: 3}
@@ -286,6 +286,17 @@ MonoBehaviour:
   ManuallyImposedPrimaryOre: 
   ManuallyImposedSecondaryOre: 
   ManuallyImposedState: 
+  Statut_Unknown: 0
+  Statut_Discovered: 0
+  Statut_BuildingPart1: 0
+  Statut_BuildingPart2: 0
+  Statut_InProgress: 0
+  Statut_Paused: 0
+  Statut_Empty: 0
+  PrimaryOre: 
+  SecondaryOre: 
+  PrimaryOreAmount: 0
+  SecondaryOreAmount: 0
 --- !u!1 &3120216157408135079
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +364,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
